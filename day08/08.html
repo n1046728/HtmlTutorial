@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        第八天 區塊尺寸計算
+
+        box model
+
+        尺寸是累加出來的
+        區塊尺寸=width + padding + border + margin
+        可見尺寸=width border padding 
+    -->
+
+     <style>
+         * {
+            margin: 0;
+            padding: 0;
+         }
+         div {
+             background-color: #aaa;
+             width: 300px;
+             border: 10px solid #666;
+             padding: 20px;
+             margin: 20px;
+         }
+     </style>
+     <div>
+        中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文
+        中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文
+        中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文
+        中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文
+    </div>
+</body>
+</html>
