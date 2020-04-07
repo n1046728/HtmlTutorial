@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            /* google 960 griding system 1200 */
+            width: 960px;
+            background-color: blanchedalmond;
+            margin: auto;
+            /* padding: 10px; */
+        }
+
+        .col {
+            width: 280px;
+            margin: 10px;
+            padding: 10px;
+            /* height: 200px; */
+            background-color: #ccc;
+            float: left;
+        }
+        .col img{
+            width: 100%;
+        }
+        .ooxx {
+            clear: both;
+            /* height: 10px; */
+            height: 10px;
+            background-color: #f00;
+        }
+    </style>
+</head>
+<!-- 
+    1.子物件設為浮動，父物件會抓不到，父本來是由子層撐開
+    ex. .col float 
+    2.clear 閃開浮動物件，會在浮動物件下方
+-->
+
+<body>
+    <div class="container">
+        <div class="col">
+            <img class="float-img" src="https://fakeimg.pl/250x150/aaaaaa/eeeeee">
+            <h3>title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates error nisi quaerat harum, laudantium,
+                atque saepe, nesciunt repellat explicabo iusto nobis aliquam quisquam. Illum, id minima. Nobis quis
+                veniam excepturi?</p>
+        </div>
+        <div class="col">
+            <img class="float-img" src="https://fakeimg.pl/250x150/aaaaaa/eeeeee">
+            <h3>title</h3>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates error nisi quaerat harum, laudantium,
+                atque saepe, nesciunt repellat explicabo iusto nobis aliquam quisquam. Illum, id minima. Nobis quis
+                veniam excepturi?</p>
+        </div>
+        
+        <div class="col">
+            <img class="float-img" src="https://fakeimg.pl/250x150/aaaaaa/eeeeee">
+            <h3>title</h3>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates error nisi quaerat harum, laudantium,
+                atque saepe, nesciunt repellat explicabo iusto nobis aliquam quisquam. Illum, id minima. Nobis quis
+                veniam excepturi?</p>
+        </div>
+        
+        <div class="ooxx"></div>
+    </div>
+</body>
+
+</html>
