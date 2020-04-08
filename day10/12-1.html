@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu {
+            background-color: #fa0;
+            text-align: center;
+            font-size: 0;
+        }
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #fa0;
+            font-size: 16px;
+        } 
+
+        .menu a:hover{
+            background-color: #000;
+        }
+    </style>
+</head>
+<!-- 
+    1.Link 的間格  
+    2.文字相關會繼承父物件
+    3.去除a標籤的間格是空白字元  先將父物件font-size 設為0 再設子物件font-size
+    4.hover sudo class 某種狀態
+
+ -->
+<body>
+    <div class="menu">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </div>
+</body>
+</html>
