@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        .wrap {
+            width: 960px;
+            margin: auto;
+            background-color: #ccc;
+            display: flex;
+            /* flex-wrap: wrap; */
+        }
+
+        .item {
+            width: 300px;
+            margin: 0 10px 10px;
+            background-color: #ffa;
+        }
+    </style>
+</head>
+<!-- 
+1.Felx 支援度問題：ie8、ie9、ie10、ie11、edge
+2.設為flex後，裡面物件為flex item 物件會橫排，且不會有空白字元的問題
+3.再增加item也不會折行，會自動調整
+4.flex-wrap: wrap 則會折行
+5.amos 第一次直播 介紹CSS flex
+ -->
+
+<body>
+    <div class="wrap">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, at tempora! Fuga, atque.
+            Ducimus libero incidunt totam aliquid, natus blanditiis fugiat quis eligendi quaerat, praesentium
+            repellendus aspernatur accusamus cupiditate adipisci!</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, at tempora! Fuga, atque.
+            Ducimus libero incidunt totam aliquid, natus blanditiis fugiat quis eligendi quaerat, praesentium
+            repellendus aspernatur accusamus cupiditate adipisci!</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, at tempora! Fuga, atque.
+            Ducimus libero incidunt totam aliquid, natus blanditiis fugiat quis eligendi quaerat, praesentium
+            repellendus aspernatur accusamus cupiditate adipisci!</div>
+        <!-- <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, at tempora! Fuga, atque.
+            !</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, at tempora! Fuga, atque.
+            Ducimus libero incidunt totam aliquid, natus blanditiis fugiat quis eligendi quaerat, praesentium
+            repellendus aspernatur accusamus cupiditate adipisci!</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, at tempora! Fuga, atque.
+            Ducimus libero incidunt totam aliquid, natus blanditiis fugiat quis eligendi quaerat, praesentium
+            repellendus aspernatur accusamus cupiditate adipisci!</div> -->
+    </div>
+</body>
+
+</html>
