@@ -1,0 +1,72 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .controller {
+            display: block;
+            padding: 6px 10px;
+            background-color: #000;
+            color: #fff;
+            width: 300px;
+            text-decoration: none;
+        }
+
+        .text {
+            width: 280px;
+            padding: 20px;
+            background-color: #ccc;
+        }
+
+        .text.x {
+            display: none;
+        }
+    </style>
+</head>
+<!-- 
+    read csscoke網頁色彩
+
+ -->
+
+<body>
+    <a href="#" class="controller controller1">開/關</a>
+    <div class="text text1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, aut totam perspiciatis deleniti praesentium odio
+        veritatis error ratione, dignissimos, eum voluptate tempora eaque. Tenetur incidunt ullam, asperiores minima
+        necessitatibus cum!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, aut totam perspiciatis deleniti praesentium odio
+        veritatis error ratione, dignissimos, eum voluptate tempora eaque. Tenetur incidunt ullam, asperiores minima
+        necessitatibus cum!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, aut totam perspiciatis deleniti praesentium odio
+        veritatis error ratione, dignissimos, eum voluptate tempora eaque. Tenetur incidunt ullam, asperiores minima
+        necessitatibus cum!
+    </div>
+    <a href="#" class="controller controller2">開/關</a>
+    <div class="text text2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, aut totam perspiciatis deleniti praesentium odio
+        veritatis error ratione, dignissimos, eum voluptate tempora eaque. Tenetur incidunt ullam, asperiores minima
+        necessitatibus cum!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, aut totam perspiciatis deleniti praesentium odio
+        veritatis error ratione, dignissimos, eum voluptate tempora eaque. Tenetur incidunt ullam, asperiores minima
+        necessitatibus cum!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, aut totam perspiciatis deleniti praesentium odio
+        veritatis error ratione, dignissimos, eum voluptate tempora eaque. Tenetur incidunt ullam, asperiores minima
+        necessitatibus cum!
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".controller1").click(function () {
+                $(".text1").toggleClass('x');
+            });
+            $(".controller2").click(function () {
+                $(".text2").toggleClass('x');
+            });
+        });
+    </script>
+</body>
+
+</html>
